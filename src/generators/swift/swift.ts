@@ -129,7 +129,7 @@ export const swift: Generator<
 	generateRoot: async (client, context) => {
 		await Promise.all([
 			client.generateFile(
-				'TypewriterAnalytics.swift',
+				'AppAnalyticsEvent+Generated.swift',
 				'generators/swift/templates/analytics.swift.hbs',
 				context
 			),
