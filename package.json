@@ -22,7 +22,8 @@
     "lint": "eslint './src/**/*.{ts,tsx}'",
     "release": "yarn run build && np --any-branch",
     "release:pre": "yarn run build && np prerelease --any-branch --tag next --no-release-draft",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "install": "npm run build"
   },
   "engines": {
     "node": ">=0.10.18"
